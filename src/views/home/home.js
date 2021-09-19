@@ -42,7 +42,7 @@ class Home extends Component {
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     {this.state.items.map((item, index) => (
-                        <Grid item key={index} xs={4}>
+                        <Grid item key={index} xs={12} md={4} >
                             <Item >    
                                 <Card title={item.title} url={item.url} explanation={item.explanation} date={item.date} />
                             </Item>
